@@ -3,6 +3,8 @@
 The class ThreeDimensionalGraphing takes a function (e.g.  e^x+7y) of x and y and generates z, with specific ranges of x and y. All results are rounded to the closest integers. 
 The default domain of x and y is [-10,10]X[-10,10]
 
+Undefined case n/0 is approximated using n/0.001. You can change the value 0.001 by using setApproximateLimitOfUndefine method.
+
 The test.java class is the main method, an example of how to use the class ThreeDimensionalGraphing.
 
 Use toString method can check the result of the calculation.
