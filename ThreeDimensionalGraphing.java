@@ -20,10 +20,9 @@ public class ThreeDimensionalGraphing {
     private boolean is3D;
     //do we have 2 parameters or one
     private Queue<Integer> Z_values;
-
+    //A queue of values in the order of z,x,y,z,x,y,z,x,y.... The second and third values are corresponsed to the first value. 
     private double stepLength=1;
 
-    private final String discription="The class takes 5 parameters. The first is a function of x and y.\nThe second and third are the lower and upper limits of x.\nThe 4th and 5th are the lower and upper limit of y.\nThe class will generate a list of x,y,z values from the function. ";
 
     private double  approximateLimitOfUndefine=0.001;
 
@@ -322,9 +321,6 @@ public class ThreeDimensionalGraphing {
         return (int)Math.round(Double.parseDouble(tempCalculation.pop()));
     }
 
-    public void printDiscreption(){
-        System.out.println(discription);
-    }
 
     public String toString(){
         if(postfixOperations==null){
@@ -378,9 +374,4 @@ public class ThreeDimensionalGraphing {
             return 3;
         }else {return 2;}
     }
-
-
-
-
-
 }
